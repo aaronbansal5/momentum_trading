@@ -2,10 +2,11 @@ import alpaca_trade_api as tradeapi
 import pandas as pd
 from datetime import datetime, timedelta
 import tradingdays
+import secret
 
 
-API_KEY = 'PKY1BGMOEW63FIVDK3Q2' 
-API_SECRET = 'NQ8kAiJdN6JTfeJi3bJdDoBWNIzrpp6VrJ8M3IRG' 
+API_KEY = secret.API_KEY
+API_SECRET = secret.API_SECRET
 APCA_API_BASE_URL = 'https://paper-api.alpaca.markets' 
 api = tradeapi.REST(API_KEY, API_SECRET, APCA_API_BASE_URL, api_version='v2')
 
